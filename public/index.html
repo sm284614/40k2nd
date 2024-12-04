@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
     <title>Warhammer 40,000 2nd Edition</title>    
 </head>
 <body>
     <div id="container">
-        <div id="user"></div>
+        <div id="user">James</div>
         <div id="logoTop"></div>
         <p></p>
         <div id="navigation">
-            <!-- <a href="#" onclick="loadContent('weapon_list')">Weapons</a>
-            <a href="#" onclick="loadContent('faction_list')">Factions</a>
-            <a href="#" onclick="loadContent('model_list')">Models</a>
-            <a href="#" onclick="loadContent('unit_list')">Units</a> -->
+            <a href="#" data-target="army_list">Armies</a>
+            <a href="#" data-target="rules">Rules</a>
             <a href="#" data-target="weapon_list">Weapons</a>
             <a href="#" data-target="faction_list">Factions</a>
             <a href="#" data-target="model_list">Models</a>
@@ -24,6 +22,14 @@
         </div>
         <div id="main"></div>
         <div id="footer"></div>
+    </div>
+    <div id="myModal" class="modal" style="display: none;"> <!-- Initially hidden -->
+        <div class="modal-content">
+            <span id="modal-close-button" class="close">&times;</span>
+            <div id="modal-main-content">
+                <p>Hello!</p>
+            </div>
+        </div>
     </div>
     <!-- Link to external JavaScript file -->
     <script src="scripts.js"></script>
